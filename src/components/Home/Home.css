@@ -1,11 +1,12 @@
-.profile-image {
-  border: 4px solid #64ffda;
-  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
-};
+/* Base styles */
 .home {
   background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
+/* Main card container */
 .main-card {
   border: 1px solid #2d3748;
   border-radius: 12px;
@@ -29,10 +30,19 @@
   overflow: hidden;
   box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
   transition: all 0.3s ease;
+  width: 256px;
+  height: 256px;
+  margin: 0 auto;
 }
 
 .profile-image-container:hover {
   box-shadow: 0 0 30px rgba(100, 255, 218, 0.5);
+}
+
+.profile-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Left accent border for content sections */
@@ -56,6 +66,7 @@
   display: flex;
   gap: 16px;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .social-icon {
@@ -92,3 +103,132 @@
   transform: translateY(-2px);
 }
 
+/* Interest list styling */
+.interest-list {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-interests {
+  margin-top: 20px;
+}
+
+/* Explicit layout classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-teal-400 {
+  color: #4fd1c5;
+}
+
+.text-gray-300 {
+  color: #d1d5db;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row !important;
+  }
+  
+  .md\:w-1\/3 {
+    width: 33.333333% !important;
+  }
+  
+  .md\:w-3\/5 {
+    width: 60% !important;
+  }
+  
+  .md\:items-start {
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-card {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .content-section {
+    padding-left: 15px;
+  }
+  
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
