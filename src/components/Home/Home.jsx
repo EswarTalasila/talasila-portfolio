@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 // import icon from "../../Images/profilepic.jpg";
 import icon from "../../Images/newIcon.jpg";
+import resumePDF from "../../assets/Eswar_Talasila_Resume_FF.pdf";
 
 import {
   FaGithub,
@@ -49,6 +50,17 @@ const Home = () => {
               </a>
               <a href="mailto:ectalasi@ncsu.edu" className="social-icon">
                 <FaEnvelope size={28} />
+              </a>
+            </div>
+
+            <div className="resume-container mt-4">
+              <a
+                href={resumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="resume-button"
+              >
+                Resume
               </a>
             </div>
           </div>

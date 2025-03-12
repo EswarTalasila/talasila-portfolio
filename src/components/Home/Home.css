@@ -80,6 +80,32 @@
   transform: translateY(-3px);
 }
 
+/* Resume button styling */
+.resume-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.resume-button:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Skills tags */
 .skills-container {
   display: flex;

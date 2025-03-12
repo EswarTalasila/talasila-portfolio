@@ -2,13 +2,7 @@ import React from "react";
 import "../../input.css";
 import "./Project.css";
 import "../../output.css";
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-  FaPython,
-  FaReact,
-  FaJava,
-} from "react-icons/fa";
+import { FaGithub, FaPython, FaReact, FaJava } from "react-icons/fa";
 import {
   SiPytorch,
   SiPandas,
