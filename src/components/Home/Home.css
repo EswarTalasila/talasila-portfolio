@@ -1,0 +1,96 @@
+.profile-image {
+  border: 4px solid #64ffda;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+};
+.home {
+  background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+}
+
+/* Add these to your Home.css file */
+
+/* Main card container */
+.main-card {
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: rgba(17, 24, 39, 0.7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 40px auto;
+  transition: all 0.3s ease;
+}
+
+.main-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Image styles with glow effect */
+.profile-image-container {
+  border: 4px solid #64ffda;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profile-image-container:hover {
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.5);
+}
+
+/* Left accent border for content sections */
+.content-section {
+  border-left: 4px solid #64ffda;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+/* Heading underline style */
+.accent-heading {
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #64ffda, transparent) 1;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  color: #a8b2d1;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #64ffda;
+  transform: translateY(-3px);
+}
+
+/* Skills tags */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-tag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border: 1px solid #64ffda;
+  border-radius: 30px;
+  padding: 5px 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(100, 255, 218, 0.2);
+  transform: translateY(-2px);
+}
