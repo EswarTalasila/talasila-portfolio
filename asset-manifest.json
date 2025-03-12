@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/talasila-portfolio/static/css/main.f3bc64a4.css",
-    "main.js": "/talasila-portfolio/static/js/main.d04cb90e.js",
+    "main.css": "/talasila-portfolio/static/css/main.1bc6e13b.css",
+    "main.js": "/talasila-portfolio/static/js/main.fd806f9e.js",
     "static/media/newIcon.jpg": "/talasila-portfolio/static/media/newIcon.0668aa2540a573b6c753.jpg",
+    "static/media/Eswar_Talasila_Resume_FF.pdf": "/talasila-portfolio/static/media/Eswar_Talasila_Resume_FF.03bab2113db2e9efceb4.pdf",
     "index.html": "/talasila-portfolio/index.html",
-    "main.f3bc64a4.css.map": "/talasila-portfolio/static/css/main.f3bc64a4.css.map",
-    "main.d04cb90e.js.map": "/talasila-portfolio/static/js/main.d04cb90e.js.map"
+    "main.1bc6e13b.css.map": "/talasila-portfolio/static/css/main.1bc6e13b.css.map",
+    "main.fd806f9e.js.map": "/talasila-portfolio/static/js/main.fd806f9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3bc64a4.css",
-    "static/js/main.d04cb90e.js"
+    "static/css/main.1bc6e13b.css",
+    "static/js/main.fd806f9e.js"
   ]
 }
