@@ -84,3 +84,34 @@
   background-color: #ffde59; /* Yellow color for active section */
   height: 3px;
 }
+
+/* Mobile navigation styles */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 0.5rem;  /* Reduce spacing between items */
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;  /* Smaller font on mobile */
+    margin: 10px;       /* Reduce margins */
+    white-space: nowrap;
+  }
+  
+  .navbar {
+    padding: 0.5rem 0;  /* Less padding on mobile */
+    width: 100%;
+    overflow-x: auto;   /* Allow horizontal scrolling if needed */
+  }
+}
+
+/* For very small screens */
+@media (max-width: 380px) {
+  .nav-links {
+    gap: 0.3rem;
+  }
+  
+  .nav-link {
+    font-size: 0.8rem;
+    margin: 8px;
+  }
+}
