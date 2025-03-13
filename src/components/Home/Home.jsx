@@ -1,8 +1,7 @@
 import React from "react";
 import "./Home.css";
-// import icon from "../../Images/profilepic.jpg";
 import icon from "../../Images/newIcon.jpg";
-import resumePDF from "../../assets/Eswar_Talasila_Resume_FF.pdf";
+import resumePDF from "../../assets/Eswar_Talasila_Resume_Updated.pdf";
 
 import {
   FaGithub,
@@ -30,7 +29,6 @@ const Home = () => {
               />
             </div>
 
-            {/* Social links */}
             <div className="social-links mt-6">
               <a
                 href="https://github.com/EswarTalasila"
@@ -73,8 +71,8 @@ const Home = () => {
                 I'm Eswar Talasila
               </h3>
               <p className="text-xl mb-6">
-                I'm a Junior majoring in Computer Science with a concentration
-                in AI at North Carolina State University.
+                I'm a Rising Senior majoring in Computer Science with a
+                concentration in AI at North Carolina State University.
               </p>
               <p className="mb-4">
                 Currently working as a Software Engineer Intern at Pioneer Quest
@@ -82,13 +80,12 @@ const Home = () => {
                 and Spring Boot.
               </p>
 
-              {/* Added personal information */}
               <p className="mb-4">
-                My passion for technology began when I built my first computer
-                in high school, which sparked my interest in understanding how
-                software and hardware interact. Throughout my academic journey,
-                I've developed a particular fascination with AI and machine
-                learning applications.
+                My passion for technology began when I built my first PC in high
+                school, which sparked my interest in understanding how software
+                and hardware interact. Throughout my academic journey, I've
+                developed a particular fascination with AI and machine learning
+                applications.
               </p>
 
               <div className="personal-interests mb-6">
@@ -98,9 +95,7 @@ const Home = () => {
                 <ul className="interest-list">
                   <li className="flex items-center gap-3 mb-2">
                     <FaBasketballBall className="text-teal-400" />
-                    <span>
-                      Playing basketball with friends at the campus courts
-                    </span>
+                    <span>Playing basketball with friends on campus</span>
                   </li>
                   <li className="flex items-center gap-3 mb-2">
                     <FaGamepad className="text-teal-400" />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { FaLaptopCode, FaUniversity, FaCode, FaBrain } from "react-icons/fa";
+import { FaLaptopCode, FaUniversity, FaCode } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
             <div className="education-details">
               <h3>North Carolina State University</h3>
               <p>B.S. in Computer Science | Concentration in AI</p>
-              <p>Expected: May 2026 | GPA: 3.8/4.0</p>
+              <p>Expected Graduation: May 2026 | GPA: 3.8/4.0</p>
               <div className="coursework">
                 <h4>Relevant Coursework:</h4>
                 <ul>
@@ -96,10 +96,10 @@ const About = () => {
                   <span className="skill-tag">Python</span>
                   <span className="skill-tag">C</span>
                   <span className="skill-tag">JavaScript</span>
+                  <span className="skill-tag">TypeScript</span>
                   <span className="skill-tag">SQL</span>
                   <span className="skill-tag">HTML</span>
                   <span className="skill-tag">CSS</span>
-                  <span className="skill-tag">TailwindCSS</span>
                   <span className="skill-tag">YAML</span>
                 </div>
               </div>
@@ -109,6 +109,7 @@ const About = () => {
                 <div className="skill-tags">
                   <span className="skill-tag">ReactJS</span>
                   <span className="skill-tag">NodeJS</span>
+                  <span className="skill-tag">TailwindCSS</span>
                   <span className="skill-tag">Spring Boot</span>
                   <span className="skill-tag">PyTorch</span>
                   <span className="skill-tag">NumPy</span>
@@ -124,25 +125,10 @@ const About = () => {
                   <span className="skill-tag">VS Code</span>
                   <span className="skill-tag">Eclipse</span>
                   <span className="skill-tag">Jenkins</span>
+                  <span className="skill-tag">Hibernate</span>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Personal Interests */}
-          <div className="content-box">
-            <div className="icon-heading">
-              <FaBrain className="section-icon" />
-              <h2>Personal Interests</h2>
-            </div>
-            <p className="interests-text">
-              Beyond coding, I'm passionate about understanding the intersection
-              of technology and human needs. I enjoy tackling complex problems
-              that require both technical expertise and creative thinking. In my
-              free time, I enjoy contributing to open source projects, attending
-              tech meetups, and exploring new technologies in machine learning
-              and data visualization.
-            </p>
           </div>
         </div>
       </div>
