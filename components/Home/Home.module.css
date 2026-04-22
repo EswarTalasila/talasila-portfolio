@@ -1,0 +1,152 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.content {
+  flex: 1;
+}
+
+.greeting {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.name {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 800;
+  color: var(--heading);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.bio {
+  max-width: 500px;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
+}
+
+.resumeBtn {
+  font-family: monospace;
+  font-size: 0.88rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  padding: 13px 26px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.resumeBtn:hover {
+  background: var(--accent-tint);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.12);
+}
+
+.contactLink {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.contactLink:hover {
+  color: var(--accent);
+}
+
+.socials {
+  display: flex;
+  gap: 22px;
+}
+
+.socialLink {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.imageWrap {
+  flex-shrink: 0;
+}
+
+.photo {
+  display: block;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 6px 6px 0 rgba(255, 255, 255, 0.1);
+  filter: grayscale(15%);
+  transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.photo:hover {
+  filter: grayscale(0%);
+  box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 0 30px;
+    gap: 40px;
+  }
+
+  .imageWrap {
+    align-self: center;
+  }
+
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .actions {
+    gap: 20px;
+  }
+
+  .bio {
+    max-width: 100%;
+  }
+}
