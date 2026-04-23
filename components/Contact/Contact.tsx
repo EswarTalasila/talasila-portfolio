@@ -79,15 +79,14 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <h2 className={styles.title}>Contact</h2>
+        <h2 className={styles.title}>Get in touch</h2>
       </div>
 
       <div className={styles.layout}>
         <div className={styles.infoCol}>
-          <h3 className={styles.infoTitle}>Get in touch</h3>
           <p className={styles.infoText}>
             Whether you have a project in mind, a question, or just want to
-            connect — my inbox is always open.
+            connect - my inbox is always open.
           </p>
           <div className={styles.links}>
             {contactLinks.map(({ icon, label, value, href, external }) => (
