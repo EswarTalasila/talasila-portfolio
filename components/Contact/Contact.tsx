@@ -79,7 +79,7 @@ export default function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <h2 className={styles.title}>Get in touch</h2>
+        <h2 className={styles.title}>Contact</h2>
       </div>
 
       <div className={styles.layout}>
