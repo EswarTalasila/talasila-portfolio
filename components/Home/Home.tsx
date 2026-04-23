@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <div className={styles.actions}>
           <a
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Eswar_Talasila_Resume_Updated.pdf`}
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Eswar_Talasila_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resumeBtn}
@@ -58,7 +58,7 @@ export default function Home() {
 
       <div className={styles.imageWrap}>
         <Image
-          src="/newIcon.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/newIcon.jpg`}
           alt="Eswar Talasila"
           width={300}
           height={300}
