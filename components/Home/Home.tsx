@@ -11,7 +11,7 @@ export default function Home() {
         <h2 className={styles.tagline}>I build AI-powered applications.</h2>
         <p className={styles.bio}>
           CS senior at NC State (graduating May 2026), concentration in AI.
-          Previously a Machine Learning Engineer Intern at Bilvantis Technologies —
+          Previously a Machine Learning Engineer Intern at Bilvantis Technologies -
           built AI debugging tools, FastAPI microservices, and LangChain pipelines.
         </p>
         <div className={styles.actions}>

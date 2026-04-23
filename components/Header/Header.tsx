@@ -40,7 +40,6 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
-      <a href="#home" className={styles.logo}>ET</a>
       <nav>
         <ol className={styles.navList}>
           {navItems.map(({ id, label }, i) => (

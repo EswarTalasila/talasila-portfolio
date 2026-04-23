@@ -16,14 +16,14 @@ const contactLinks = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "ectalasi@ncsu.edu",
-    href: "mailto:ectalasi@ncsu.edu",
+    value: "eesh.talasila@gmail.com",
+    href: "mailto:eesh.talasila@gmail.com",
   },
   {
     icon: <FaLinkedin />,
     label: "LinkedIn",
-    value: "linkedin.com/in/eswar-talasila",
-    href: "https://www.linkedin.com/in/eswar-talasila-832882262/",
+    value: "https://www.linkedin.com/in/eswartalasila/",
+    href: "https://www.linkedin.com/in/eswartalasila/",
     external: true,
   },
   {
@@ -44,6 +44,7 @@ const contactLinks = [
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState<{ message: string; type: "success" | "error" } | null>(null);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -62,22 +63,29 @@ export default function Contact() {
     setLoading(true);
 
     emailjs
-      .sendForm("service_p7dwmnt", "template_pi418su", form.current, "L1hk3yv0BgrIxGfJ7")
+      .sendForm("service_ndve5ip", "template_oizgtu3", form.current, { publicKey: "1X_Hf94l2AxX9hsBc" })
       .then(
         () => {
-          alert("Message sent — thanks for reaching out!");
+          setToast({ message: "Message sent - thanks for reaching out!", type: "success" });
           setFormData({ name: "", email: "", subject: "", message: "" });
           setLoading(false);
+          setTimeout(() => setToast(null), 5000);
         },
         () => {
-          alert("Failed to send. Please email me directly at ectalasi@ncsu.edu");
+          setToast({ message: "Failed to send. Please email me directly at eesh.talasila@gmail.com", type: "error" });
           setLoading(false);
+          setTimeout(() => setToast(null), 6000);
         }
       );
   };
 
   return (
     <div className={styles.container}>
+      {toast && (
+        <div className={`${styles.toast} ${styles[toast.type]}`}>
+          {toast.message}
+        </div>
+      )}
       <div className={styles.heading}>
         <h2 className={styles.title}>Contact</h2>
       </div>
