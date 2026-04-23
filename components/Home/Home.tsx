@@ -16,7 +16,7 @@ export default function Home() {
         </p>
         <div className={styles.actions}>
           <a
-            href="/Eswar_Talasila_Resume_Updated.pdf"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Eswar_Talasila_Resume_Updated.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resumeBtn}
