@@ -208,3 +208,35 @@
     padding: 24px;
   }
 }
+
+.toast {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-family: monospace;
+  max-width: 380px;
+  border: 1px solid;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  animation: slideUp 0.25s ease;
+}
+
+.success {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--heading);
+}
+
+.error {
+  background: var(--surface);
+  border-color: rgba(220, 100, 100, 0.4);
+  color: var(--heading);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

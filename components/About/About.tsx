@@ -34,7 +34,7 @@ export default function About() {
             <h3>Education</h3>
           </div>
           <p className={styles.school}>North Carolina State University</p>
-          <p className={styles.degree}>B.S. Computer Science — AI Concentration</p>
+          <p className={styles.degree}>B.S. Computer Science - AI Concentration</p>
           <p className={styles.meta}>Expected May 2026 · GPA 3.9 / 4.0</p>
           <div className={styles.coursework}>
             <p className={styles.label}>Relevant Coursework</p>
