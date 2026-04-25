@@ -31,11 +31,11 @@ const projects: Project[] = [
     title: "Wolf Cafe",
     subtitle: "Full-Stack Coffee Ordering Platform",
     description:
-      "Collaborated with a team of 4 to architect and deploy a full-stack coffee ordering system with real-time order notifications, JWT authentication, and 97% test coverage.",
+      "Architected and deployed a full-stack coffee ordering system with a team of four, featuring real-time order notifications, JWT authentication, and 97% test coverage.",
     highlights: [
-      "RESTful APIs with Spring Boot layered architecture (controller / service / repository)",
-      "Hibernate ORM for order transactions, user profiles, and menu inventory",
-      "JWT-based auth protecting user data and authenticated endpoints",
+      "RESTful APIs built with a Spring Boot layered architecture (controller, service, repository)",
+      "Hibernate ORM managing order transactions, user profiles, and menu inventory",
+      "JWT-based authentication protecting user data and restricted endpoints",
     ],
     tech: [
       { icon: <FaJava />, label: "Java" },
@@ -49,11 +49,11 @@ const projects: Project[] = [
     title: "Hydra",
     subtitle: "Multi-AI Chat Platform",
     description:
-      "Full-stack chat interface supporting multiple AI models (Gemini, Claude) with real-time streaming responses, dynamic model switching, and message history.",
+      "Full-stack chat interface for multiple AI models (Gemini, Claude) with real-time streaming, dynamic model switching, and persistent message history.",
     highlights: [
-      "FastAPI backend with endpoints for both sync and streaming responses",
-      "Asynchronous streaming with simulated typing effects",
-      "CORS middleware and error handling for secure cross-origin communication",
+      "FastAPI backend serving both synchronous and streaming response endpoints",
+      "Asynchronous token streaming with simulated typing effects",
+      "CORS middleware and structured error handling for secure cross-origin requests",
     ],
     tech: [
       { icon: <FaReact />, label: "React" },
@@ -65,11 +65,11 @@ const projects: Project[] = [
     title: "User Activity Analytics Platform",
     subtitle: "Data Structures & Algorithms",
     description:
-      "Java-based activity tracking system leveraging custom data structures to process and analyze large-scale log data with optimized time complexity and 100% method coverage.",
+      "Java activity-tracking system that uses custom data structures to process and analyze large-scale log data with optimized time complexity.",
     highlights: [
       "Custom map-based data structures for efficient log entry processing",
       "Real-time activity analysis and temporal pattern reporting",
-      "Comprehensive unit tests with 100% method and 95% line coverage",
+      "Thorough unit test suite reaching 100% method and 95% line coverage",
     ],
     tech: [
       { icon: <FaJava />, label: "Java" },
@@ -79,11 +79,11 @@ const projects: Project[] = [
     title: "ESTVP",
     subtitle: "Earth Surface Temperature Visualization Platform",
     description:
-      "ML model built with PyTorch to forecast global surface temperatures from 90 years of historical data, paired with an interactive choropleth visualization built on Plotly.js.",
+      "PyTorch model that forecasts global surface temperatures from 90 years of climate data, paired with an interactive Plotly.js choropleth for exploration.",
     highlights: [
-      "PyTorch LSTM model trained on multi-decade climate datasets",
-      "Interactive choropleth maps for global temperature exploration",
-      "Pandas and NumPy pipelines for large-scale data preprocessing",
+      "PyTorch LSTM trained on multi-decade global climate datasets",
+      "Interactive choropleth maps for country-level temperature exploration",
+      "Pandas and NumPy pipelines handling large-scale data preprocessing",
     ],
     tech: [
       { icon: <FaPython />, label: "Python" },

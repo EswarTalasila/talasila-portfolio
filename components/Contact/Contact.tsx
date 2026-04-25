@@ -16,8 +16,8 @@ const contactLinks = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: "eesh.talasila@gmail.com",
-    href: "mailto:eesh.talasila@gmail.com",
+    value: "eswarchandrat@gmail.com",
+    href: "mailto:eswarchandrat@gmail.com",
   },
   {
     icon: <FaLinkedin />,
@@ -66,13 +66,13 @@ export default function Contact() {
       .sendForm("service_ndve5ip", "template_oizgtu3", form.current, { publicKey: "1X_Hf94l2AxX9hsBc" })
       .then(
         () => {
-          setToast({ message: "Message sent - thanks for reaching out!", type: "success" });
+          setToast({ message: "Message sent. Thanks for reaching out!", type: "success" });
           setFormData({ name: "", email: "", subject: "", message: "" });
           setLoading(false);
           setTimeout(() => setToast(null), 5000);
         },
         () => {
-          setToast({ message: "Failed to send. Please email me directly at eesh.talasila@gmail.com", type: "error" });
+          setToast({ message: "Failed to send. Please email me directly at eswarchandrat@gmail.com", type: "error" });
           setLoading(false);
           setTimeout(() => setToast(null), 6000);
         }
@@ -94,7 +94,7 @@ export default function Contact() {
         <div className={styles.infoCol}>
           <p className={styles.infoText}>
             Whether you have a project in mind, a question, or just want to
-            connect - my inbox is always open.
+            connect, my inbox is always open.
           </p>
           <div className={styles.links}>
             {contactLinks.map(({ icon, label, value, href, external }) => (
