@@ -10,9 +10,9 @@ export default function Home() {
         <h1 className={styles.name}>Eswar Talasila.</h1>
         <h2 className={styles.tagline}>I build AI-powered applications.</h2>
         <p className={styles.bio}>
-          CS senior at NC State (graduating May 2026), concentration in AI.
-          Previously a Machine Learning Engineer Intern at Bilvantis Technologies -
-          built AI debugging tools, FastAPI microservices, and LangChain pipelines.
+          CS senior at NC State, graduating May 2026 with a concentration in AI.
+          Previously a Machine Learning Engineer Intern at Bilvantis Technologies,
+          where I built AI debugging tools, FastAPI microservices, and LangChain pipelines.
         </p>
         <div className={styles.actions}>
           <a
@@ -38,7 +38,7 @@ export default function Home() {
             <FaGithub size={21} />
           </a>
           <a
-            href="https://www.linkedin.com/in/eswar-talasila-832882262/"
+            href="https://www.linkedin.com/in/eswartalasila/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialLink}
@@ -47,7 +47,7 @@ export default function Home() {
             <FaLinkedin size={21} />
           </a>
           <a
-            href="mailto:ectalasi@ncsu.edu"
+            href="mailto:eswarchandrat@gmail.com"
             className={styles.socialLink}
             aria-label="Email"
           >
