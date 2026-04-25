@@ -62,12 +62,12 @@ export default function About() {
             <span className={styles.dates}>May 2025 – Jan 2026</span>
           </div>
           <ul className={styles.bullets}>
-            <li>Built FastAPI microservices with 8 REST endpoints at sub-200ms response times</li>
-            <li>Developed an AI debugging assistant using Streamlit and Gemini 1.5 Flash</li>
-            <li>Engineered LangChain prompt templates to streamline defect diagnosis</li>
+            <li>Built FastAPI microservices exposing 8 REST endpoints with sub-200ms response times</li>
+            <li>Developed an AI debugging assistant powered by Streamlit and Gemini 1.5 Flash</li>
+            <li>Designed LangChain prompt templates to streamline defect diagnosis</li>
             <li>Generated fix reports for 200+ error patterns, cutting resolution time by 40%</li>
-            <li>Designed ML pipeline processing 1,000+ files per run with parallel execution</li>
-            <li>Leveraged Snowflake for warehousing debugging logs and model performance metrics</li>
+            <li>Built an ML pipeline that processes 1,000+ files per run via parallel execution</li>
+            <li>Used Snowflake to warehouse debugging logs and model performance metrics</li>
           </ul>
         </div>
       </div>
