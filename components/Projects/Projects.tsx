@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { FaGithub, FaPython, FaReact, FaJava } from "react-icons/fa";
+import { FaGithub, FaPython, FaReact, FaJava, FaRobot, FaDocker } from "react-icons/fa";
 import {
   SiPytorch,
   SiPandas,
@@ -8,6 +8,9 @@ import {
   SiSpringboot,
   SiMysql,
   SiFastapi,
+  SiDjango,
+  SiTypescript,
+  SiGodotengine,
 } from "react-icons/si";
 import styles from "./Projects.module.css";
 
@@ -60,6 +63,7 @@ const projects: Project[] = [
       { icon: <SiFastapi />, label: "FastAPI" },
       { icon: <FaPython />, label: "Python" },
     ],
+    githubUrl: "https://github.com/EswarTalasila/Hydra",
   },
   {
     title: "User Activity Analytics Platform",
@@ -92,6 +96,56 @@ const projects: Project[] = [
       { icon: <SiNumpy />, label: "NumPy" },
       { icon: <SiPlotly />, label: "Plotly.js" },
     ],
+    githubUrl: "https://github.com/EswarTalasila/ESTVP",
+  },
+  {
+    title: "EE Lab Data Dashboard",
+    subtitle: "Full-Stack Lab Data Platform",
+    description:
+      "Containerized full-stack dashboard for EE lab data management, with a Django REST backend, TypeScript frontend, and a shared proxy routing traffic across dev, test, and prod environments.",
+    highlights: [
+      "Multi-environment Docker Compose setup with a single canonical .env model",
+      "Django REST backend with a TypeScript frontend behind a unified proxy",
+      "Automated env validation and pre-commit hooks enforcing config correctness",
+    ],
+    tech: [
+      { icon: <FaPython />, label: "Python" },
+      { icon: <SiDjango />, label: "Django" },
+      { icon: <SiTypescript />, label: "TypeScript" },
+      { icon: <FaDocker />, label: "Docker" },
+    ],
+    githubUrl: "https://github.com/EswarTalasila/DjangoProject",
+  },
+  {
+    title: "Service Suspended",
+    subtitle: "Interactive Narrative Game Series",
+    description:
+      "A 4-part interactive narrative game where players unravel a time-loop mystery through branching dialogue and choice-driven storytelling, built in Godot and Twine.",
+    highlights: [
+      "Multi-chapter branching narrative spanning 4 games with a shared story arc",
+      "Built in Godot (GDScript) and Twine with custom shaders and scripted scenes",
+      "Collaborative project with a 4-person team",
+    ],
+    tech: [
+      { icon: <SiGodotengine />, label: "Godot" },
+    ],
+    githubUrl: "https://github.com/EswarTalasila/GameDesign",
+  },
+  {
+    title: "Colored Box Sorter",
+    subtitle: "Autonomous Robotics System",
+    description:
+      "ROS 2 autonomous vehicle that detects red and blue boxes via camera, navigates to pick them up, and deposits them in the correct target region using pose estimation and route following.",
+    highlights: [
+      "Camera-based color detection driving autonomous pick-and-place missions",
+      "ROS 2 nodes for driving, controller input, pose filtering, and mission logic",
+      "Browser-based monitoring UI connected via a WebSocket bridge",
+    ],
+    tech: [
+      { icon: <FaPython />, label: "Python" },
+      { icon: <FaRobot />, label: "ROS 2" },
+    ],
+    githubUrl: "https://github.com/EswarTalasila/SelfDrivingCar",
   },
 ];
 
