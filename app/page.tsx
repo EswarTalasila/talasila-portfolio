@@ -8,18 +8,20 @@ export default function Page() {
   return (
     <>
       <Header />
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
+      <main>
+        <section id="home" aria-label="Introduction">
+          <Home />
+        </section>
+        <section id="about" aria-label="About">
+          <About />
+        </section>
+        <section id="projects" aria-label="Selected work">
+          <Projects />
+        </section>
+        <section id="contact" aria-label="Contact">
+          <Contact />
+        </section>
+      </main>
     </>
   );
 }
