@@ -68,7 +68,6 @@ export default function About() {
   return (
     <div className={styles.container}>
       <Reveal as="header" className={styles.heading}>
-        <span className={styles.kicker}>01 — About</span>
         <h2 className={styles.title}>
           A short <em>introduction</em>.
         </h2>

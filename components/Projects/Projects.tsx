@@ -183,7 +183,6 @@ export default function Projects() {
   return (
     <div className={styles.container}>
       <Reveal as="header" className={styles.heading}>
-        <span className={styles.kicker}>02 — Selected Work</span>
         <h2 className={styles.title}>
           Things I&apos;ve <em>built</em>.
         </h2>

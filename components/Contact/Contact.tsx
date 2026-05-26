@@ -95,7 +95,6 @@ export default function Contact() {
       )}
 
       <Reveal as="header" className={styles.heading}>
-        <span className={styles.kicker}>03 — Contact</span>
         <h2 className={styles.title}>
           Let&apos;s <em>talk</em>.
         </h2>
