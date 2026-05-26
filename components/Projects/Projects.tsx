@@ -15,6 +15,8 @@ import {
   SiGodotengine,
   SiNextdotjs,
   SiPostgresql,
+  SiAnthropic,
+  SiCapacitor,
 } from "react-icons/si";
 import Reveal from "@/components/Reveal/Reveal";
 import styles from "./Projects.module.css";
@@ -31,10 +33,34 @@ type Project = {
   highlights: string[];
   tech: TechTag[];
   githubUrl?: string;
+  demoUrl?: string;
   featured?: boolean;
 };
 
 const projects: Project[] = [
+  {
+    title: "Clover",
+    subtitle: "Self-hosted personal budgeting platform",
+    summary:
+      "A self-hosted alternative to Mint that connects to your bank via Plaid, auto-categorizes transactions with Claude, and ships as both a web app and a native iOS app — all backed by a database you actually control.",
+    highlights: [
+      "Cursor-based incremental Plaid sync: subsequent fetches only pull new, changed, or removed transactions.",
+      "Claude Haiku 4.5 fills in categorization whenever Plaid returns “Other” or null, keeping the dataset clean.",
+      "Async FastAPI backend with JWT auth, SQLAlchemy 2 async, and Alembic migrations behind a 32-test pytest suite on real Postgres.",
+      "Same React + Vite client wrapped as a real native iOS app via Capacitor 7, with dark mode and a responsive shell.",
+    ],
+    tech: [
+      { icon: <FaReact />, label: "React" },
+      { icon: <SiFastapi />, label: "FastAPI" },
+      { icon: <FaPython />, label: "Python" },
+      { icon: <SiPostgresql />, label: "PostgreSQL" },
+      { icon: <SiAnthropic />, label: "Claude" },
+      { icon: <SiCapacitor />, label: "Capacitor / iOS" },
+    ],
+    githubUrl: "https://github.com/EswarTalasila/Clover",
+    demoUrl: "https://tally-blue-seven.vercel.app",
+    featured: true,
+  },
   {
     title: "EE Lab RSR Assessment Platform",
     subtitle: "Full-stack platform migration · NC State",
@@ -182,17 +208,38 @@ export default function Projects() {
                     <p className={styles.cardKicker}>{project.subtitle}</p>
                     <h3 className={styles.cardTitle}>{project.title}</h3>
                   </div>
-                  {project.githubUrl ? (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.cardLink}
-                      aria-label={`${project.title} on GitHub`}
-                    >
-                      <FaGithub />
-                    </a>
-                  ) : null}
+                  <div className={styles.cardLinks}>
+                    {project.demoUrl ? (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.cardLink}
+                        aria-label={`${project.title} live demo`}
+                      >
+                        <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                          <path
+                            d="M3.5 10.5L10.5 3.5M10.5 3.5H5M10.5 3.5V9"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    ) : null}
+                    {project.githubUrl ? (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.cardLink}
+                        aria-label={`${project.title} on GitHub`}
+                      >
+                        <FaGithub />
+                      </a>
+                    ) : null}
+                  </div>
                 </header>
 
                 <p className={styles.cardSummary}>{project.summary}</p>
@@ -233,17 +280,38 @@ export default function Projects() {
               <div className={styles.otherGlow} aria-hidden="true" />
               <header className={styles.otherCardHeader}>
                 <p className={styles.cardKicker}>{project.subtitle}</p>
-                {project.githubUrl ? (
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.cardLink}
-                    aria-label={`${project.title} on GitHub`}
-                  >
-                    <FaGithub />
-                  </a>
-                ) : null}
+                <div className={styles.cardLinks}>
+                  {project.demoUrl ? (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.cardLink}
+                      aria-label={`${project.title} live demo`}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 14 14" aria-hidden="true">
+                        <path
+                          d="M3.5 10.5L10.5 3.5M10.5 3.5H5M10.5 3.5V9"
+                          stroke="currentColor"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  ) : null}
+                  {project.githubUrl ? (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.cardLink}
+                      aria-label={`${project.title} on GitHub`}
+                    >
+                      <FaGithub />
+                    </a>
+                  ) : null}
+                </div>
               </header>
               <h4 className={styles.otherTitleName}>{project.title}</h4>
               <p className={styles.otherSummary}>{project.summary}</p>

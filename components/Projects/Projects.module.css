@@ -113,6 +113,13 @@
   line-height: 1.15;
 }
 
+.cardLinks {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
 .cardLink {
   display: inline-flex;
   align-items: center;
